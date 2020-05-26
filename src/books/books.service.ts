@@ -11,7 +11,7 @@ export class BooksService {
     private booksRepository: Repository<Book>,
   ) {}
 
-  async create(bookDto: BookDto) {
+  async create(bookDto: BookDto): Promise<Book> {
     return await this.booksRepository.save(bookDto);
   };
 
