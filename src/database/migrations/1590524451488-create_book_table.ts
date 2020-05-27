@@ -16,14 +16,17 @@ export class createBookTable1590524451488 implements MigrationInterface {
                 {
                     name: "title",
                     type: "varchar",
+                    isNullable: true
                 },
                 {
                     name: "description",
                     type: "varchar",
+                    isNullable: true
                 },
                 {
                     name: "isActive",
                     type: "boolean",
+                    isNullable: true
                 },
             ]
         }), true)

@@ -11,8 +11,8 @@ export class BooksService {
     private booksRepository: Repository<Book>,
   ) {}
 
-  async create(bookDto: BookDto): Promise<Book> {
-    return await this.booksRepository.save(bookDto);
+  create(bookDto: BookDto): Promise<Book> {
+    return this.booksRepository.save(bookDto);
   };
 
   findAll(): Promise<Book[]> {
