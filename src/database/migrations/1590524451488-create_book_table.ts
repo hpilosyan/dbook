@@ -4,7 +4,7 @@ export class createBookTable1590524451488 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(new Table({
-            name: "question",
+            name: "book",
             columns: [
                 {
                     name: "id",
@@ -22,7 +22,7 @@ export class createBookTable1590524451488 implements MigrationInterface {
                     type: "varchar",
                 },
                 {
-                    name: "is_active",
+                    name: "isActive",
                     type: "boolean",
                 },
             ]
@@ -30,6 +30,7 @@ export class createBookTable1590524451488 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable("book");
     }
 
 }
