@@ -63,6 +63,12 @@ $ npm run test:cov
 ## Start dev database
 docker-compose up -d
 
+## Run migrations
+npm run migration:run
+
+## Seed
+npm run seed:run
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
